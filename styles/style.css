@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+button {
+    color: white;
+    background-color: #1D4ED8;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 26px;
+    border: none;
+    text-align: center;
+    /* display:inline-block; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+
+/* navbar section */
+
+
+
+.logo-edit {
+    margin-top: 5px;
+
+}
+
+.navbar-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    padding: 15px;
+
+}
+
+.navbar-section ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-section a {
+    text-decoration: none;
+    color: #575757;
+}
+
+body {
+    /* background-color:blueviolet; */
+}
+
+
+/* Now I am going to edit cover section in header*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/banner.jpg');
+    /* ../ mane holo folder theke ber houa */
+
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: grid;
+    place-items: center;
+
+}
+
+/* header first div */
+.banner-content {
+    max-width: 800px;
+    padding: 0 20px;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    justify-items: center;
+}
+
+/* Heading styler */
+.banner-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.banner-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dddddd;
+    margin: 0;
+}
+
+.register-btn {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* main section */
+
+/* card one */
+
+.speaker-all-card-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.main-h1 {
+    text-align: center;
+    color: #0D1B2A;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 45px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.card-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-info .p1 {
+    color: #2563EB;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.card-info .p2 {
+    color: #575757;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+.card-info h3 {
+    font-weight: bolder;
+}
+
+.speaker-card {
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    width: 640px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.speaker-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 650px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 20px;
+
+    /* padding: 90px; */
+}
+
+
+
+
+
+
+
+
+/* card two */
+
+.price-card-section {
+    padding: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+
+
+#head {
+    margin-top: 65px;
+    color: #0D1B2A;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+#pera {
+    color: #575757;
+    line-height: 3;
+    font-size: 20px;
+}
+
+
+.secure-spot h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px;
+    color: #0D1B2A;
+}
+
+.secure-spot p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #575757;
+}
+
+/* card design */
+
+/* original */
+.card-section {
+
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 500px;
+    width: 360px;
+    padding: 30px;
+    overflow: hidden;
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+/* original */
+.card-section .one {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #888888;
+}
+
+.card-section .price {
+    font-weight: bolder;
+    font-size: 50px;
+    color: #0D1B2A;
+}
+
+
+.card-section .two {
+    text-transform: lowercase;
+    color: #888888;
+
+}
+
+
+/* ok chill!
+} */
+
+/* duplicate start */
+
+.card-section-two {
+
+    background-color: #0D1B2A;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 500px;
+    width: 360px;
+    padding: 30px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* duplicate */
+.card-section-two .one {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #888888;
+}
+
+.card-section-two .price {
+    font-weight: bolder;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+
+.card-section-two .two {
+    text-transform: lowercase;
+    color: #888888;
+
+}
+
+.btn-outline-two {
+    color: rgb(245, 237, 237);
+    background-color: #1D4ED8;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 26px;
+    border: none;
+    text-align: center;
+    /* display:inline-block; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.btn-outline-three {
+    color: #0D1B2A;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 26px;
+    border: 1px solid #0D1B2A;
+    text-align: center;
+    /* display:inline-block; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+
+/* duplicatte-end*/
+
+.features-list {
+
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-left: 20px;
+
+}
+
+.features-list li {
+
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #374151;
+    line-height: 1;
+
+}
+
+
+.features-list li::marker {
+    color: #2563EB;
+}
+
+.btn-outline {
+    border: 1px solid #2563EB;
+    color: #2563EB;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.element {}
+
+.card-flex {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}

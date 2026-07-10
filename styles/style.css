@@ -358,9 +358,37 @@ header {
 }
 
 
+
 .features-list li::marker {
     color: #2563EB;
 }
+
+.features-list-two {
+
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-left: 20px;
+
+}
+
+.features-list-two li {
+
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #d8dde3;
+    line-height: 1;
+
+}
+
+
+
+.features-list-two li::marker {
+    color: #2563EB;
+}
+
 
 .btn-outline {
     border: 1px solid #2563EB;

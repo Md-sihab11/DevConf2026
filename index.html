@@ -165,6 +165,121 @@
 
   </main>
 
+  <!-- DevConf 2026: AI-Powered Job Board Section -->
+  <!-- ===== Newsletter Signup Section ===== -->
+  <section class="newsletter-section">
+    <div class="newsletter-container">
+
+      <div class="newsletter-inner">
+
+        <!-- Left: headline + social proof -->
+        <div class="newsletter-text">
+          <span class="newsletter-tag">Stay in the loop</span>
+          <h2>Don't <span class="miss">miss</span> a single update</h2>
+          <p>Speaker lineups, schedule drops, and exclusive early-bird deals — straight to your inbox before anyone else
+            hears about them.</p>
+          <div class="subscriber-count">
+            <div class="subscriber-avatars">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <p><strong>6,200+ developers</strong> already subscribed</p>
+          </div>
+        </div>
+
+        <!-- Right: email form -->
+        <div class="newsletter-form-wrapper">
+          <form class="newsletter-form" id="newsletterForm" onsubmit="submitNewsletter(event)">
+            <label for="newsletterEmail" class="form-label">Your work email</label>
+            <div class="form-row">
+              <input type="email" id="newsletterEmail" placeholder="you@company.com" class="newsletter-input"
+                required />
+              <button type="submit" class="newsletter-btn">
+                Subscribe
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </button>
+            </div>
+            <p class="form-privacy">No spam, ever. Unsubscribe with one click.</p>
+          </form>
+
+          <!-- Success state (hidden by default) -->
+          <div class="newsletter-success" id="newsletterSuccess">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            <div>
+              <p class="success-title">You're on the list!</p>
+              <p class="success-sub">Check your inbox — a confirmation is on its way.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom: 3 perk cards -->
+      <div class="newsletter-perks">
+        <div class="perk-card">
+          <div class="perk-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <h4>Speaker Reveals</h4>
+          <p>First to know when new speakers are announced for DevConf 2026.</p>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+          </div>
+          <h4>Schedule Drops</h4>
+          <p>Get the full agenda and workshop slots before they go live on the site.</p>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
+          <h4>Exclusive Deals</h4>
+          <p>Subscriber-only early-bird discounts and giveaways throughout the year.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function submitNewsletter(e) {
+      e.preventDefault();
+      document.getElementById('newsletterForm').style.display = 'none';
+      document.getElementById('newsletterSuccess').style.display = 'flex';
+    }
+  </script>
+
+
+  <!-- now the footer section -->
+
+  <div class="footer-section">
+
+  </div>
+
 </body>
 
 </html>

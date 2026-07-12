@@ -26,19 +26,15 @@ button {
 /* navbar section */
 
 
-
-.logo-edit {
-    margin-top: 5px;
-
-}
-
 .navbar-section {
     display: flex;
     justify-content: space-around;
     background-color: white;
-    height: 80px;
+    align-items: center;
+    height: 100px;
     width: 100%;
     padding: 15px;
+    margin-bottom: 20px;
 
 }
 
